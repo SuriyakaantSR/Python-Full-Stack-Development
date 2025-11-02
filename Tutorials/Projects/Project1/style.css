@@ -1,0 +1,141 @@
+/* Style1.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #FD6569; /* Theme color */
+    padding: 10px;
+}
+
+/* Main Container for Books */
+.container {
+    padding: 10px;
+}
+
+/* Individual Book Container */
+.book-container {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 25%;
+    margin-right: 30px; /* Separates book containers horizontally */
+    margin-top: 20px;
+    display: inline-block; /* Allows multiple books per row */
+    vertical-align: top;
+}
+
+.book-container h2 {
+    color: #FD6569; /* Theme color for title */
+}
+
+/* Delete Button inside the Book Container */
+.book-container button {
+    background-color: #FD6569;
+    color: black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Add Popup Button ('+') Styling */
+.add-button {
+    background-color: #FD6569;
+    color: black;
+    border-radius: 100%; /* Makes it a circle */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+    border: none;
+    
+    /* Fixed position for the button at the bottom right */
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1;
+}
+
+/* Popup Overlay (The dark background behind the form) */
+.popup-overlay {
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none; /* Hidden by default */
+}
+
+/* Popup Box (The form container) */
+.popup-box {
+    background-color: rgb(251, 250, 250);
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    z-index: 2;
+    display: none; /* Hidden by default */
+}ra
+
+/* Styling for Input Fields in the Popup */
+.popup-box input {
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-bottom: solid black 2px;
+    font-size: 20px;
+}
+
+/* Styling for Textarea in the Popup */
+.popup-box textarea {
+    background-color: white;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border: solid black 2px;
+    font-size: 20px;
+}
+
+/* Placeholder Color (for different browser compatibility) */
+.popup-box input::placeholder,
+.popup-box textarea::placeholder {
+    color: black;
+}
+
+/* Styling for Buttons inside the Popup */
+.popup-box button {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    border: none;
+}
+
+/* Focus state for input/textarea (removes default outline) */
+.popup-box input:focus,
+.popup-box textarea:focus {
+    outline: none;
+}
