@@ -441,3 +441,24 @@ else:
     print("Grade : F")
 print()
 '''
+'''
+A = int(input("Enter first number: "))
+B = int(input("Enter second number: "))
+C = int(input("Enter third number: "))
+D = int(input("Enter fourth number: "))
+E = int(input("Enter fifth number: "))
+
+if A == B == C == D == E:
+    print("All numbers are equal")
+elif A > B and A > C and A > D and A > E:
+    print("First number is the greatest")
+elif B > C and B > D and B > E:
+    print("Second number is the greatest")
+elif C > D and C > E:
+    print("Third number is the greatest")
+elif D > E:
+    print("Fourth number is the greatest")
+else:
+    print("Fifth number is the greatest")
+print()
+'''
