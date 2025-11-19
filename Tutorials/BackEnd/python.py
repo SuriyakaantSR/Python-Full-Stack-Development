@@ -406,3 +406,38 @@ for i in range(1,n + 1):
     print()
 '''
 '''
+# student max marks;
+rollno = int(input("Enter your rollno : "))
+Std_Name = input("Enter your name : ")
+English = int(input("Enter your English marks : "))
+Tamil = int(input("Enter your Tamil marks : "))
+Maths = int(input("Enter your Maths marks : "))
+Total = English + Tamil + Maths;
+Percentage = (Total / 3) 
+print("Total-Mark = ",Total)
+print("Percentage = ",Percentage,"%")
+print()
+
+if English < 35 or Tamil < 35 or Maths < 35 :
+    print("Result : Fail")
+else:
+    print("Result : Pass")
+
+if Percentage >= 90:
+    print("Grade : O")
+elif Percentage >= 80:
+    print("Grade : A+")
+elif Percentage >= 70 :
+    print("Grade : A")
+elif Percentage >= 60 :
+    print("Grade : B+")
+elif Percentage >= 50 :
+    print("Grade : B")
+elif Percentage >= 40:
+    print ("Grade : C") 
+elif Percentage >= 35 :
+    print("Grade : D")
+else:
+    print("Grade : F")
+print()
+'''
