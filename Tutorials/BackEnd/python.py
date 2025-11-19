@@ -5,7 +5,7 @@ English = int(input("Enter your English mark : "))
 Tamil = int(input("Enter your Tamil marks : "))
 Maths = int(input("Enter your Maths mark : "))
 Total = (English + Tamil + Maths)
-print("English marks = ",English)
+print("English marks = ",English)+
 print("Tamil Marks = ",Tamil)
 print("Maths marks = ",Maths)
 print("Total marks",Total)
@@ -404,4 +404,5 @@ for i in range(1,n + 1):
     for k in range(i):
         print("*",end=" ")
     print()
+'''
 '''
